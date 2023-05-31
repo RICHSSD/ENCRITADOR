@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+      <title>Encriptador</title>
+</head>
+<body>
+      <header>
+            <img src="/img/Logo@2x.png" alt="logo de alura" class="logo">
+      </header>
+     <main>
+
+            <section class="mensaje1">
+                  <div class="caja1">
+                        <textarea class="text-area" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
+                  </div>
+                  
+                  <div> 
+                              
+                         <h6 class="informacion">solo letras minusculas y sin acento</h6>
+
+                  </div>
+
+                  <div class="botones">
+                        <button class="btn-encriptar" onclick="btnEncriptar()">encriptar</button>
+                        <button class="btn-desencriptar" onclick="btnDesencriptar()">desencriptar</button>
+                  </div>
+            </section>
+
+                  
+            <section class="resultado">
+                  <textarea class="mensaje" id="textAreaId" ></textarea>
+                  <div>
+                        <button class="copiar" onclick="copiar('mensaje')">copiar</button>
+                  </div>
+            </section>
+
+     </main>
+     
+
+    
+ 
+  <script src="script.js"></script>
+</body>
+</html>
